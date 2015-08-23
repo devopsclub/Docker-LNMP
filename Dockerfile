@@ -53,6 +53,9 @@ RUN rm -rf /var/www/
 RUN mkdir /var/www/
 RUN chown -R apache:apache /var/www/
 
+#Add index.php
+ADD index.php /var/www/index.php
+
 # Set the port to 80 
 EXPOSE 80 3306
 
